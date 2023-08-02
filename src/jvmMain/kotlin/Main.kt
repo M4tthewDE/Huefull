@@ -26,7 +26,15 @@ fun app() {
     DirectoryPicker(showDirPicker) { path ->
         run {
             showDirPicker = false
-            println(path)
+
+            if (path != null) {
+                // TODO: show view with git diff
+                // https://voyager.adriel.cafe/navigation
+                // https://github.com/JetBrains/compose-multiplatform/blob/master/tutorials/README.md
+                // https://github.com/JetBrains/compose-multiplatform/blob/master/examples/README.md
+                // https://www.codeaffine.com/2016/06/16/jgit-diff/
+                println(path)
+            }
         }
     }
 
